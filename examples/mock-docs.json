@@ -1,0 +1,20 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Company Holiday Schedule",
+    "content": "The company observes 10 public holidays this year. The next holiday is Thanksgiving.",
+    "allowed_roles": ["public", "hr_manager", "finance", "engineer"]
+  },
+  {
+    "id": "doc-002",
+    "title": "Q3 Layoff Plan - CONFIDENTIAL",
+    "content": "Due to restructuring, the company will lay off 15% of the sales team in Q3. Severance packages will be 3 months.",
+    "allowed_roles": ["hr_manager"]
+  },
+  {
+    "id": "doc-003",
+    "title": "Salary Band Guidelines - CONFIDENTIAL",
+    "content": "Software Engineers range from $120k to $180k. Directors range from $200k to $250k.",
+    "allowed_roles": ["hr_manager", "finance"]
+  }
+]
