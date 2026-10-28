@@ -45,7 +45,7 @@ class Orchestrator:
         print(f"[JUDGE]        Score: {evaluation.score} | Passed: {evaluation.passed}")
         print(f"[JUDGE]        Reason: {evaluation.reason}")
 
-        # 4. Audit
+               # 4. Audit
         audit = AuditLog(
             user_role=role,
             query=query,
@@ -54,6 +54,9 @@ class Orchestrator:
             generated_answer=answer,
             judge_evaluation=evaluation,
         )
+
+        # Print the audit summary to prove it's being used
+        print(f"[AUDIT]        Logged {len(audit.retrieved_doc_ids)} doc(s) for role '{audit.user_role}'.")
 
         if evaluation.passed:
             print("[ORCHESTRATOR] ✅ Request completed safely.")
