@@ -8,8 +8,6 @@ from pathlib import Path
 import pytest
 import yaml
 
-from ragops.judge import Judge
-from ragops.orchestrator import Orchestrator
 from ragops.retriever import RBACRetriever
 
 
